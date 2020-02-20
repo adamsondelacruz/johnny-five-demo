@@ -1,24 +1,40 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import { Button } from 'semantic-ui-react'
 import './App.css';
+import axios from 'axios';
 
-function App() {
+import { ReactComponent as BulbOn} from './assets/bulb-on.svg';
+import { ReactComponent as BulbOff} from './assets/bulb-off.svg';
+
+
+const App = () => {
+  const url = 'http://localhost:8000'
+  const [active, setActive] = useState(false);  
+  const setDevice = () => {
+    const path = active? 'off': 'on';
+    setActive(!active);    
+    axios.get(`${url}/${path}`)
+    .then( (response) => {
+      console.log('RESPO', response);         
+    });
+    
+  }
+  const Toggle = () => {
+    
+    return (
+      <Button toggle active={active} onClick={ ()=> { setDevice()}} >
+          {active? 'Turn OFF': 'Turn ON'}
+      </Button>
+    )  
+  }
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        {active ? <BulbOn />: <BulbOff />}                
+        <Toggle/>
       </header>
+      
     </div>
   );
 }
