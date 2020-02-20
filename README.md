@@ -1,68 +1,36 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# [IoT for Javascript Developers](https://www.meetup.com/IoT-for-Front-end-developers/)
 
-## Available Scripts
+![meetup][version-badge] ![meetup][meetup-version]
 
-In the project directory, you can run:
+## Using Javascript to control IoT devices
+This repository contains the React.js web application code that sends http commands to  the demo Johnny-Five web server that controls the Arduino board.
 
-### `npm start`
+### Link to related repositories
+The folling is the link to the other repositories in order to test this setup.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* [Johnny-Five demo web server](https://github.com/adamsondelacruz/johnny-five-server)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Setting up your local environment
+The following tools needs to be installed on your local machine.
 
-### `npm test`
+* [Node.js (LTE)](https://nodejs.org/en/download/) - To run a webserver that wraps call to Johnny-Five;
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Running the server
+```
+npm install
+npm run start
+```
 
-### `npm run build`
+### If you have questions, contact:
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+Adamson dela Cruz
+CEO/CTO
+IOT NINJA LIMITED
+Work Email       : adam@iotninja.io
+Personal Email   : adamson.delacruz@gmail.com
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+```
+[version-badge]: https://img.shields.io/badge/iot-javascript-blue.svg
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+[meetup-version]: https://img.shields.io/badge/meetup-02-red.svg
